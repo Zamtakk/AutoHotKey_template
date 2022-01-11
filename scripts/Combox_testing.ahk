@@ -15,18 +15,6 @@ Gui , Show
 SetTimer , update, 1000
 return
 
-^!#a::
-    Gui, Font , s30 Bold cGreen
-    GuiControl, Font, GPS_text
-    GuiControl, Text, GPS_text , Something else and nothing more
-return
-
-^!#d::
-    ;Gui, Font, s30 Bold cRed
-    ;GuiControl, Font, GPS_text
-    GuiControl , Move , GPS_text , w900
-return
-
 ^!#s::
     if (RunStatus = "Stopped") {
         RunStatus := "Started"
